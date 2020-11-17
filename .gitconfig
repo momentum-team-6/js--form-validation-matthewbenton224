@@ -1,0 +1,13 @@
+[user]
+	name = Matthew Smith
+	email = matthewbenton224@gmail.com
+[credential]
+	helper = osxkeychain
+[core]
+	editor = nano
+	excludesfile = /Users/matthewsmith/.gitignore
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
